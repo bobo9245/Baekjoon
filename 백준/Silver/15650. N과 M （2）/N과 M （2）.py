@@ -1,0 +1,11 @@
+n,m = map(int,input().split())
+s=[]
+def dfs(start):
+    if len(s)==m:
+        print(' '.join(map(str,s)))
+        return
+    for i in range(start, n+1):
+        s.append(i)
+        dfs(i+1)
+        s.pop()# 백트래킹해야함
+dfs(1)           
