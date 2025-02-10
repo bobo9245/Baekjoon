@@ -1,3 +1,13 @@
+### 문제 한줄평
+
+자 저걸 보다보면 이제 15의 배수판별법이 필요하겠죠? 
+15는 3과 5의 배수를 모두 만족하면 되기 때문에 두가지를 만족해야함.
+1) 각 자리의 수의 합이 3의 배수이다.
+2) 맨 끝자리 수가 5 혹은 0이다 -> 이 문제에서는 맨 끝자리가 5인 경우만 존재
+따라서 dp는 각 자리 수의 합을 3으로 나누었을 때의 나머지로 설정해주고 진행하면 된다.
+이를 따라서 풀었을 때 코드처럼 풀면 된다는 결과네요~
+
+
 # [Gold V] Ezreal 여눈부터 가네 ㅈㅈ - 20500 
 
 [문제 링크](https://www.acmicpc.net/problem/20500) 
@@ -36,9 +46,3 @@
 
  <p>문제의 답을 <mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mstyle><mjx-mspace style="width: 0.167em;"></mjx-mspace></mjx-mstyle><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mstyle><mjx-mspace style="width: 0.167em;"></mjx-mspace></mjx-mstyle><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mstyle><mjx-mspace style="width: 0.167em;"></mjx-mspace></mjx-mstyle><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c37"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mstyle scriptlevel="0"><mspace width="0.167em"></mspace></mstyle><mn>000</mn><mstyle scriptlevel="0"><mspace width="0.167em"></mspace></mstyle><mn>000</mn><mstyle scriptlevel="0"><mspace width="0.167em"></mspace></mstyle><mn>007</mn></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">$1\,000\,000\,007$</span></mjx-container>로 나눈 나머지를 출력한다.</p>
 
-자 저걸 보다보면 이제 15의 배수판별법이 필요하겠죠? 
-15는 3과 5의 배수를 모두 만족하면 되기 때문에 두가지를 만족해야함.
-1) 각 자리의 수의 합이 3의 배수이다.
-2) 맨 끝자리 수가 5 혹은 0이다 -> 이 문제에서는 맨 끝자리가 5인 경우만 존재
-따라서 dp는 각 자리 수의 합을 3으로 나누었을 때의 나머지로 설정해주고 진행하면 된다.
-이를 따라서 풀었을 때 코드처럼 풀면 된다는 결과네요~
