@@ -1,14 +1,22 @@
-def make_ioi(n):
-    return list('IO'*n+'I')
-n=int(input())
-ioi=make_ioi(n)
-m=int(input())
-s=list(input())
-count=0
-for _ in range(0,len(s)-len(ioi)):
-    if s[_:_+len(ioi)]==ioi:
-        count+=1
-if len(s)-len(ioi)==0:
-    if s==ioi:
-        count+=1
-print(count)
+import sys
+input = sys.stdin.readline
+
+N = int(input())
+M = int(input())
+S = input().rstrip()
+
+ans = 0
+count = 0
+i = 1
+
+while i < (M - 1):
+    if S[i-1] == 'I' and S[i] == 'O' and S[i+1] == 'I':
+        count += 1
+        if count >= N:
+            ans += 1
+        i += 2
+    else:
+        count = 0
+        i += 1
+
+print(ans)
